@@ -1,0 +1,86 @@
+
+:root{
+  --color-green:#1ABC9C;
+  --dark-color:#2C3E50;
+  --white:white;
+}
+
+nav{
+  background-color: var(--dark-color);
+  
+}
+.navbar-brand{
+  font-size: 25px !important;
+}
+
+a{
+  color:var(--white) !important;
+  font-weight: 700 !important;
+  font-size: 15px !important;
+}
+
+.active{
+  background-color: var(--color-green);
+  border-radius: 8px;
+}
+
+.header{
+  color:var(--white);
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  padding: 20px;
+}
+
+.header-content::before {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background-color: var(--dark-color);
+  bottom: -50px;
+  left: 0;
+  border-radius: 8px;
+}
+
+.header-content{
+  position: relative;
+  display: inline-block;
+  color:var(--dark-color);
+  padding: 20px 20px 0 20px;
+  margin-bottom: 100px;
+}
+
+.header-content::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f005";
+  position: absolute;
+  background-color: white;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  bottom: -50px; 
+  left: 50%;
+  transform: translate(-50%, 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--dark-color);
+  font-size: 32px;
+}
+
+.overlay{
+  opacity: 0;
+  background-color: var(--color-green);
+}
+.slide:hover .overlay{
+  opacity: 1;
+  background-color:#1dd1add1;
+}
+.add-btn{
+  text-align: center;
+  font-size: 50px;
+  color: var(--white);
+}
